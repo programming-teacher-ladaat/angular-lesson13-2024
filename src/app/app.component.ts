@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ObsErrComponent } from './components/obs-err/obs-err.component';
+import { TryObservableComponent } from './components/try-observable/try-observable.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [TryObservableComponent, ObsErrComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'lesson13';
+  isOK = true;
 }
