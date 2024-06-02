@@ -1,6 +1,15 @@
-<button (click)="isOK = !isOK">toggle try-observable</button>
+<!-- <button (click)="isOK = !isOK">toggle try-observable</button>
 @if (isOK) {
   <app-try-observable></app-try-observable>
 }
 <hr>
-<app-obs-err></app-obs-err>
+<app-obs-err></app-obs-err> -->
+<app-login></app-login>
+<hr>
+<app-navbar></app-navbar>
+<hr>
+<button (click)="addPost()">add post</button>
+@for(item of list; track item.id)
+{
+  <p>{{item.title}}</p>
+}
